@@ -10,7 +10,7 @@
 1. Abrir CMD y navegar hasta el directorio de la web api ../back-end/alumnos
 2. Escribir el comando code . para abrir VSCode
 3. Asegurarse que los siguientes paquetes Nuget estén instalados en la aplicación o instalarlos desde la terminal dentro del proyecto de VSCode
-
+```
 dotnet add package Microsoft.AspNetCore.Cors --version 2.3.0
 dotnet add package Microsoft.AspNetCore.OpenApi --version 8.0.12
 dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
@@ -20,16 +20,24 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.1
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
 dotnet add package AspNetCore.Authentication.Basic --version 9.0.0
 dotnet add package AutoMapper --version 13.0.1
-
-4. Ejecutar el comando dotnet build para compilar el proyecto y asegurarse que no hayan errores
-5. Si no hay errores ejecutar dotnet run para que la aplicación esté disponible para consumo
+```
+4. Ejecutar el comando `dotnet build` para compilar el proyecto y asegurarse que no hayan errores
+5. Si no hay errores ejecutar `dotnet run` para que la aplicación esté disponible para consumo
 6. La ejecución mostrará la dirección https que está siendo usada en el localhost para desplegar la api, copiar esa dirección para posibles ajustes en la aplicación react
+```
+![image](https://github.com/user-attachments/assets/78b30343-86b2-4091-9e25-07c40fe7f59a)
+
+```
+
 
 # Preparar proyecto react para consumo de api
 1. Abrir CMD y navegar hasta el directorio de la web api ../front-end/alumnos
 2. Escribir el comando code . para abrir VSCode
-3. Asegurarse que esté instalado React Route Dom, si no, instalarlo desde la terminal ejecutando npm install react-router-dom
+3. Asegurarse que esté instalado React Route Dom, si no, instalarlo desde la terminal ejecutando `npm install react-router-dom`
 4. abrir el archivo services/api.js
 5. asegurarse que la dirección en la asignación de la constante  API_URL sea igual a la que se determinó en el el paso final de la aplicación web
+![image](https://github.com/user-attachments/assets/ecd27fba-ce61-46ea-9755-77edcb1d72d1)
+
+7. Ejecutar el domando `npm start` para iniciar la applicación react
 
 
